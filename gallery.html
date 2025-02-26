@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Fort awesome CDN-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Life On Land</title>
+        <link rel="icon" href="images/logo.png" type="image/icon">
+        <link rel="stylesheet" href="gallery.css">
+        
+    </head>
+    <body>
+
+        <!-- header section -->
+        <header>
+
+            <!-- website logo -->
+            <img src="onel_images/logo.jpg" class="logo" alt="logo">
+
+            <!-- header title -->
+            <span class="title">
+                <span class="title-life">Life</span>
+                <span class="title-on">On</span>
+                <span class="title-land">Land</span>
+            </span>
+
+            <!-- navigation menu -->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="home.html">home</a></li>
+                    <li class="content-nav"><a href="#">content</a>
+                        <ul class="dropdown">
+                            <li><a href="content_student1.html">Bio Diversity</a></li>
+                            <li><a href="sasmithContent.html">Forests</a></li>
+                            <li><a href="content_st3.html">Mountains</a></li>
+                            <li><a href="content4.html">National Strategies</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gallery.html"  class="active">gallery</a></li>
+                    <li><a href="shop.html">shop</a></li>
+                    <li><a href="feedback.html">feedback</a></li>
+                    <li><a href="sitemap.html">site map</a></li>
+                    <li><a href="aboutus.html">about us</a></li>
+                </ul>
+            </nav>
+
+            <!-- search bar trigger -->
+            <div class="icons">
+                <a href="profile.html"><i class="fa-regular fa-user" id="user-btn"></i></a>
+            </div>
+
+        </header>
+        
+        <div class="main">
+
+            <div class="container">
+
+                <div class="slide">
+    
+                    <div class="item" style="background-image: url(onel_images/img1.jpg);">
+                        <div class="content">
+                            <div class="name">Worbarrow Bay</div>
+                            <div class="des">Situated on the Isle of Purbeck in Dorset UK is Worbarrow Bay, a small cove over dramatic cliffs jutting into the English Channel. It’s among the most serene spots on earth and can be accessed by foot alone through the abandoned Tyneham village.</div>
+                            <button>See More</button>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(onel_images/img2.jpg);">
+                        <div class="content">
+                            <div class="name">Banff Park</div>
+                            <div class="des">Banff National Park was born in 1885 in the Canadian Rockies and is a household name when it comes to breath-taking mountain sceneries, turquoise lakes such as Lake Louise amongst others in plenty and large numbers of wild animals. </div>
+                            <button>See More</button>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(onel_images/img3.jpg);">
+                        <div class="content">
+                            <div class="name">Mount Fuji</div>
+                            <div class="des">Mount Fuji is Japan’s highest mountain which stands at 3776m hence making it as a symbol of environmental beauty besides its cultural function. It’s situated in Honshu Island an explosive volcano which last erupted in 1707. </div>
+                            <button>See More</button>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(onel_images/img4.jpg);">
+                        <div class="content">
+                            <div class="name">netherlands</div>
+                            <div class="des">The Netherlands is found in Northwestern Europe and is characterized by its flat landscape, extensive canal systems, tulip fields, and iconic windmills. It's land situated below sea level through the help of complex networks of dams and other water barriers for protection.</div>
+                            <button>See More</button>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(onel_images/img5.jpg);">
+                        <div class="content">
+                            <div class="name">Death Valley</div>
+                            <div class="des">One of the hottest and driest places on Earth is Death Valley located in eastern California with a 56.7°C (134°F) highest air temperature record in Furnace Creek. In this desert region salt flats, sand dunes, rugged mountains as well as wildlife that survive because they have adapted themselves to this harsh environment.</div>
+                            <button>See More</button>
+                        </div>
+                    </div>
+        
+                </div>
+                
+                <div class="colorchange">
+                    <p class="name">Change Background Color</p>
+                    <button id="color1" onclick="changeBackgroundColor('black')" style="background-color: black;">Black</button>
+                    <button id="color2" onclick="changeBackgroundColor('seagreen')"style="background-color: seagreen" >Sea Green</button>
+                    <button id="color3" onclick="changeBackgroundColor('darkslategrey')"style="background-color: DarkSlateGrey;">Dark Slate Grey</button>
+                </div>
+            
+               <div class="font-buttons">
+                <p class="name">Change Font</p>
+                    <button id="font1" style="font-family : Arial">Arial</button>
+                    <button id="font2" style ="font-family: Courier New">Courier New</button>
+                    <button id="font3" style ="font-family: Georgia">Georgia</button>
+                </div>
+    
+
+            
+                <div class="button">
+                    <button class="prev"><i class="fa-solid fa-arrow-left"></i></i></button>
+                    <button class="next"><i class="fa-solid fa-arrow-right"></i></i></button>
+                </div>
+                
+            </div>
+
+            
+
+        </div>
+
+        <!-- footer -->
+    <footer class="wave-footer">
+
+        <div class="footer-container">
+            
+            <div class="footer-data">
+                <div class="footer-about-me">
+                    <a href="PageEditorStudent4.html" target="_blank"><h3>ONEL SILVA</h3></a>
+                    <p>Page edited and designed by Onel Silva, a university undergrad and web designer. 
+                        Dedicated to delivering captivating and innovative digital experiences.
+                    </p>
+                </div>
+
+                <span class="footer-pages">
+                    <a href="content4.html" target="_self">Content</a>
+                    <a href="sitemap.html" target="_self">Site Map</a>
+                    <a href="PageEditorStudent4.html" target="_blank">Page Editor</a>
+                </span>
+                
+                <span class="footer-brands">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </span>
+            </div>
+
+            <div class="copyright">
+                <h4>© Copyrights Onel Silva. All Rights Reserved.</h4>
+            </div>
+            
+        </div>
+
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+        <div class="wave wave4"></div>
+
+
+    </footer>
+
+       <script src="gallery.js"></script>
+    </body>
+</html>

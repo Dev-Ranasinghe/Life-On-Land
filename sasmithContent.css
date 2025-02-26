@@ -1,0 +1,502 @@
+/* scroll to top */
+.scroll-to-top{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color: rgb(138, 255, 5);
+    z-index: 1999;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.scroll-to-top i{
+    font-size: 20px;
+}
+  
+.scroll-to-top:hover{
+    background-color: #25b808;
+    box-shadow: 0 0 40px rgb(155, 252, 0);
+    color: #ffffff;
+}
+
+/* backward button */
+#backward-button{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    position: fixed;
+    right: 10px;
+    bottom: 60px;
+    background-color: rgb(138, 255, 5);
+    z-index: 1999;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#backward-button i{
+    font-size: 20px;
+}
+  
+#backward-button:hover{
+    background-color: #25b808;
+    box-shadow: 0 0 40px rgb(155, 252, 0);
+    color: #ffffff;
+}
+  
+/* home section */
+.forest-home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(videos/forestBgVideo.mp4);
+}
+
+.forest-content-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* home data section */
+.forest-home .home-description{
+    position: absolute;
+    left: 60px;
+    top: 250px;
+    height: 300px;
+    width: 575px;
+}
+
+.forest-home .home-description .home-title{
+    font-size: 60px;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0 2px 0.5px rgb(3, 115, 79);
+    margin-bottom: 30px;
+}   
+
+.forest-home .home-description .explore-btn{
+    border: none;
+    outline: none;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    padding: 8px 25px;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 18px;
+    box-shadow: var(--box-shadow);
+    text-shadow: var(--text-shadow);
+    margin-bottom: 15px;
+}
+
+.forest-home .home-description .home-data{
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  text-align: justify;
+  padding: 10px;
+  margin-top: 50px;
+  transition: 1s;
+
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+  text-shadow: var(--text-shadow);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.forest-home .home-description .home-data:hover{
+  box-shadow: 0 0 40px rgb(255, 255, 255);
+}
+
+.forest-home .home-description a:hover{
+  background-color: #71ea0e;
+  box-shadow: 0 0 20px rgb(112, 230, 10);
+  color: #001307;
+  transition: 0.5s;
+}
+
+/* quick links */
+.forest-home .quick-links{
+    position: absolute;
+    bottom: 28px;
+    right: 70px;
+    text-align: right;
+}
+
+.forest-home .quick-links h2{
+    color: rgb(15, 222, 15);
+    font-size: 16px;
+    margin: 5px; 
+    text-transform: capitalize;
+    padding: 2px 15px;
+    border-radius: 20px;
+    color: rgb(13, 53, 1);
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.forest-home .quick-links h2:hover{
+    background-color: #71ea0e;
+    box-shadow: 0 0 20px rgb(119, 255, 0);
+    color: #001307;
+    transition: 0.5s;
+}
+
+/* social media icons */
+.home-social-icons{
+    position: absolute;
+    right: 10px;
+    bottom: 200px;
+}
+  
+.home-social-icons i{
+    color: white;
+    font-size: 25px;
+    display: block;
+    margin-bottom: 30px;
+    width: 50px;
+    transition: all 0.25s linear;
+}
+  
+.home-social-icons i:hover{
+    font-size: 40px;
+    color: #0cee0c;
+    transition: 1s;
+}
+
+/* forest overview section */
+.forest-overview{
+    height: 750px;
+    width: 100%;
+    position: relative;
+    background-color: var(--bg-color2);  
+}
+  
+.forest-overview .overview-main-title {
+    position: absolute;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-transform: uppercase;
+    color: var(--heading-color);
+    box-shadow: 0 0 10px rgb(111, 112, 110);
+}
+  
+.forest-overview .overview-data{
+    position: absolute;
+    color: rgb(201, 210, 201);
+    padding: 20px 30px;
+    top: 90px;
+    z-index: 4;
+    width: auto;
+    margin-right: 80px;
+    margin-left: 80px;
+    height: auto;
+    border-radius: 10px;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    background-image: linear-gradient(
+      120deg,
+      rgba(9, 130, 5, 0.833),
+      rgba(15, 58, 4, 0.555)
+    );
+    background-size: 30px;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+    text-align: justify;
+    margin-top: 50px;
+}
+  
+.forest-overview .overview-data:hover{
+    box-shadow: var(--box-shadow2);
+    transition: 0.5s;
+}
+
+/* publications section */
+.publications{
+    position: relative;
+    height: 700px;
+    width: 100%;
+    background-color: var(--bg-color1);
+    color: white;
+}
+  
+.publications-title{
+    position: absolute;
+    padding: 0 10vw;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 20px;
+    width: 100%;
+    text-transform: uppercase;
+    color: var(--heading-color);
+    box-shadow: 0 0 10px rgb(111, 112, 110);
+    top: 20px;
+}
+  
+.publications .row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 130px;
+}
+  
+.publications .image{
+    background: #000b05;
+    position: relative;
+    flex: 1;
+    max-width: 460px;
+    height: 500px;
+    margin: 20px;
+    overflow: hidden;
+}
+  
+.publications .image:hover{
+    box-shadow: 0 0 20px rgb(8, 230, 26);
+    transition: 0.5s;
+    transform: scale(1.02);
+}
+  
+.publications .image img{
+    opacity: 0.8;
+    vertical-align: top;
+    transition: 0.6s;
+    transition-property: opacity;
+    height: 100%;
+    width: 100%;
+}
+  
+.publications .image:hover img{
+    opacity: 1;
+}
+  
+.publications .image .details .more{
+    position: absolute;
+    background-color: rgba(126, 211, 29, 0.721);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    bottom: -60px;
+    transition: 0.6s;
+    transition-property: bottom;
+}
+  
+.publications .image:hover .details .more{
+    bottom: 0;
+}
+  
+.publications .image .details .more .read-more{
+    color: #102b03;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+  
+.publications .image .details .more .read-more span{
+    font-weight: 900;
+}
+
+/* overview container */
+.section-container{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: #071e0c;  
+    overflow: hidden;
+  }
+  
+  .section-main-title {
+    position: absolute;
+    padding: 0 10vw;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-transform: uppercase;
+    color: var(--heading-color);
+    box-shadow: 0 0 10px rgb(111, 112, 110);
+    }
+  
+  .section-data{
+    position: absolute;
+    color: rgb(156, 165, 156);
+    padding: 20px 30px;
+    top: 90px;
+    z-index: 4;
+    width: 500px;
+    height: 400px;
+    left: 70px;
+    border-radius: 10px;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    background-image: linear-gradient(
+      120deg,
+      rgba(11, 130, 7, 0.7),
+      rgba(15, 58, 4, 0.555)
+    );
+    background-size: 60px;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+    text-align: justify;
+    margin-top: 50px;
+  }
+  
+  .section-data:hover{
+    box-shadow: 0 0 20px rgb(3, 75, 9);
+    transition: 0.5s;
+    transform: scale(1.02);
+  }
+  
+  .section-title{
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: var(--heading-color);
+  }
+  
+.section-img-box{
+    position: absolute;
+    top: 90px;
+    z-index: 4;
+    width: 500px;
+    height: 400px;
+    right: 70px;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    margin-top: 50px;
+}
+  
+  .section-img-box:hover{
+    box-shadow: 0 0 20px rgb(8, 230, 26);
+    transition: 0.5s;
+    transform: scale(1.02);
+  }
+  
+  .section-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+  }
+
+/* news section */
+.news{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    height: auto;
+    position: relative;
+    background-color: var(--bg-color2);
+}
+
+.news-title{
+    position: absolute;
+    padding: 0 10vw;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 20px;
+    width: 100%;
+    text-transform: uppercase;
+    color: var(--heading-color);
+    box-shadow: 0 0 10px rgb(111, 112, 110);
+    top: 20px;
+}
+
+.news-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+
+.news-box{
+    width: 300px;
+    border: 2px solid rgb(29, 46, 2);
+    margin: 20px;
+    border-radius: 10px;
+    height: 600px;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    background-image: linear-gradient(
+    120deg,
+    rgba(3, 73, 8, 0.7),
+    rgba(37, 43, 33, 0.658)
+    );
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+}
+
+.news-box:hover{
+    box-shadow: 0 0 10px rgb(240, 240, 240);
+    transition: 0.5s;
+  }
+
+.news-img{
+    width: 100%;
+    height: 300px;
+}
+
+.news-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+.news-text{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-text span{
+    color: red;
+    font-size: 12px;
+}
+
+.news-text .news-description{
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--heading-color);
+}
+
+.news-text .news-description:hover{
+    color: red;
+}
+
+.news-text p{
+    color: rgb(202, 210, 194);
+    font-size: 12px;
+    overflow: hidden;
+    text-align: justify;
+}
+
+.news-text a{
+    color: green;
+    font-size: 12px;
+}
+
+.news-text a:hover{
+    color: rgb(209, 15, 11);
+    transition: all ease 0.3s;
+}
+

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width">
+        <!-- CSS file -->
+        <link rel="stylesheet" href="shop.css">
+        <link rel="icon" type="image/png" href="content/logo.jpg">
+        <title>Life On Land</title>
+
+        <!-- css file link -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- main css file link -->
+        <link rel="stylesheet" href="main_sally.css">
+
+        <!-- logo link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    </head>
+    <body>
+        <!-- header section -->
+        <header>
+            <img src="content/logo.jpg" class="logo" alt="logo">
+            <span class="title">
+                <span class="title-life">Life</span>
+                <span class="title-on">On</span>
+                <span class="title-land">Land</span>
+            </span>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="home.html">home</a></li>
+                    <li class="content-nav"><a href="#">content</a>
+                        <ul class="dropdown">
+                            <li><a href="content_student1.html">Bio Diversity</a></li>
+                            <li><a href="sasmithContent.html">Forests</a></li>
+                            <li><a href="content_st3.html">Mountains</a></li>
+                            <li><a href="content4.html">National Strategies</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gallery.html">gallery</a></li>
+                    <li><a href="shop.html" class="active">shop</a></li>
+                    <li><a href="feedback.html">feedback</a></li>
+                    <li><a href="sitemap.html">site map</a></li>
+                    <li><a href="aboutus.html">about us</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <a href="profile.html"><i class="fa-regular fa-user" id="user-btn"></i></a>
+            </div>
+        </header>
+        <main>
+            <div id="header">
+                <div class="right-nav">
+                    <!-- To go back to shop or go to shop -->
+                    <a onclick="goBack()" class="go-back" >
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M13.729 5.575c1.304-1.074 3.27-.146 3.27 1.544v9.762c0 1.69-1.966 2.618-3.27 1.544l-5.927-4.881a2 2 0 0 1 0-3.088l5.927-4.88Z" clip-rule="evenodd"/>
+                        </svg>
+                    </a>
+                    <!-- To go back to cart or go to cart -->
+                    <a onclick="goToShoppingCart()" class="cart-icon">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12.268 6A2 2 0 0 0 14 9h1v1a2 2 0 0 0 3.04 1.708l-.311 1.496a1 1 0 0 1-.979.796H8.605l.208 1H16a3 3 0 1 1-2.83 2h-2.34a3 3 0 1 1-4.009-1.76L4.686 5H4a1 1 0 0 1 0-2h1.5a1 1 0 0 1 .979.796L6.939 6h5.329Z"/>
+                            <path d="M18 4a1 1 0 1 0-2 0v2h-2a1 1 0 1 0 0 2h2v2a1 1 0 1 0 2 0V8h2a1 1 0 1 0 0-2h-2V4Z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+ <!-- Shop section begins -->           
+            <div class="Shop">
+                <div class="Shop_heading">
+                    <div id="Shop_name">
+                        SHOP<br>LIFE ON LAND
+                    </div>
+                </div>
+                <!-- product categaory section -->
+                <div class="product_category">
+                    <a href="#Badges"><div>Badges</div></a>
+                    <a href="#T-Shirts"><div>T-Shirts</div></a>
+                    <a href="#Mugs"><div>Mugs</div></a>
+                    <a href="#Other"><div>Other</div></a>
+                </div>
+                <div class="products_outer_main">
+                    <div class="products_outer">
+                        <div id="Paintings" class="product_row">
+                            <div class="products-thumbnails">
+                                <div class="product">
+                                    <div class="product_ID">001</div>
+                                    <img class="product_img"
+                                            src="shop/badges1.jpg"
+                                            alt="Badges1">
+                                    <div class="product_details">
+                                        <div class="product_name">Badges<br>(Life on Land theme)</div>
+                                        <div class="product_price">$10</div>
+                                    </div>
+                                    <button value="notAdded" class="Add_to_cart">Add to cart</button>
+                                </div>
+                                <div class="product">
+                                    <div class="product_ID">002</div>
+                                    <img class="product_img"
+                                            src="shop/badges2.jpg"
+                                            alt="Badges2">
+                                    <div class="product_details">
+                                        <div class="product_name">Badges 2</div>
+                                        <div class="product_price">$12</div>
+                                    </div>
+                                    <button value="notAdded" class="Add_to_cart">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="T-Shirts" class="product_row">
+                            <div class="products-thumbnails">
+                                <div class="product">
+                                    <div class="product_ID">003</div>
+                                    <img class="product_img"
+                                            src="shop/t-shirt1.jpg"
+                                            alt="black_t-shirt">
+                                    <div class="product_details">
+                                        <div class="product_name">Black T-Shirt<br>(Life on Land logo)</div>
+                                        <div class="product_price">$40</div>
+                                    </div>
+                                    <button value="notAdded" class="Add_to_cart">Add to cart</button>
+                                </div>
+                                <div class="product">
+                                    <div class="product_ID">004</div>
+                                    <img class="product_img"
+                                            src="shop/t-shirt2.jpg"
+                                            alt="white_t-shirt">
+                                    <div class="product_details">
+                                        <div class="product_name">White T-Shirt</div>
+                                        <div class="product_price">$65</div>
+                                    </div>
+                                    <button value="notAdded" class="Add_to_cart">Add to cart</button>
+                                </div>
+                                <div class="product">
+                                    <div class="product_ID">005</div>
+                                    <img class="product_img"
+                                            src="shop/t-shirt3.jpg"
+                                            alt="beige_t-shirt">
+                                    <div class="product_details">
+                                        <div class="product_name">T-Shirt<br>(Life on Land Theme)</div>
+                                        <div class="product_price">$70</div>
+                                    </div>
+                                    <button value="notAdded" class="Add_to_cart">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="Mugs" class="product_row">
+                            <div class="products-thumbnails">
+                                <div class="product">
+                                    <div class="product_ID">006</div>
+                                    <img class="product_img"
+                                            src="shop/mug1.jpg"
+                                            alt="mug_(no.1)">
+                                    <div class="product_details">
+                                        <div class="product_name">Mug 1<br>(Life on Land Theme)</div>
+                                        <div class="product_price">$6</div>
+                                    </div>
+                                    <button value="notAdded" class="Add_to_cart">Add to cart</button>
+                                </div>
+                                <div class="product">
+                                    <div class="product_ID">007</div>
+                                    <img class="product_img"
+                                            src="shop/mug2.jpg"
+                                            alt="mug_(no.2)">
+                                    <div class="product_details">
+                                        <div class="product_name">Mug 2<br>(Life on Land Theme)</div>
+                                        <div class="product_price">$10</div>
+                                    </div>
+                                    <button value="notAdded" class="Add_to_cart">Add to cart</button>
+                                </div>
+                                <div class="product">
+                                    <div class="product_ID">008</div>
+                                    <img class="product_img"
+                                            src="shop/mug3.jpg"
+                                            alt="mug_(no.3)">
+                                    <div class="product_details">
+                                        <div class="product_name">Mug 3<br>(Life on Land Theme)</div>
+                                        <div class="product_price">$7</div>
+                                    </div>
+                                    <button value="notAdded" class="Add_to_cart">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="Other" class="product_row">
+                            <div class="products-thumbnails">
+                                <div class="product">
+                                    <div class="product_ID">009</div>
+                                    <img class="product_img"
+                                            src="shop/stickers.jpg"
+                                            alt="stickers">
+                                    <div class="product_details">
+                                        <div class="product_name">Sticker Pack<br>(Life on Land Theme)</div>
+                                        <div class="product_price">$8</div>
+                                    </div>
+                                    <button value="notAdded" class="Add_to_cart">Add to cart</button>
+                                </div>
+                                <div class="product">
+                                    <div class="product_ID">010</div>
+                                    <img class="product_img"
+                                            src="shop/bookmark.jpg"
+                                            alt="bookmark">
+                                    <div class="product_details">
+                                        <div class="product_name">Bookmark<br>(Life on Land Theme)</div>
+                                        <div class="product_price">$6</div>
+                                    </div>
+                                    <button value="notAdded" class="Add_to_cart">Add to cart</button>
+                                </div>
+                                <div class="product">
+                                    <div class="product_ID">011</div>
+                                    <img class="product_img"
+                                            src="shop/painting.jpg"
+                                            alt="painting">
+                                    <div class="product_details">
+                                        <div class="product_name">Painting<br>(Life on Land theme)</div>
+                                        <div class="product_price">$35</div>
+                                    </div>
+                                    <button value="notAdd" class="Add_to_cart">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- Shop section ends and and cart section begins -->
+            <div class="Cart">
+                <div class="cart_section">
+                    <div class="cart-title-outer">
+                        <div class="cart_heading">
+                            SHOPPING CART
+                        </div>
+                    </div>
+                    <div class="cart-item-list">
+                        <div class="cart-item-list-heading">
+                            <div id="cart-item-id-heading"> ITEM ID</div>
+                            <div id="cart-item-img-heading">IMAGE</div>
+                            <div id="cart-item-name-heading">PRODUCT NAME</div>
+                            <div id="cart-item-unit-price-heading">UNIT PRICE</div>
+                            <div id="cart-item-qty-heading"> QUANTITY</div>
+                            <div id="item-sub-total-heading">SUB TOTAL</div>
+                            <div id="item-remove-heading">REMOVE</div>
+                        </div>
+                    </div>
+                    <div class="item-total-price">TOTAL PRICE : $0 </div>
+                </div>
+                <div class="details-for-place-order-outer">
+                    <form class="details-for-place-order">
+                        <div class="name-input input-details">
+                            <label class="details-labels content-details-labels" id="name-label">Name : </label>
+                            <input id="name" type="text" placeholder="Your Name">
+                        </div>
+                        <div class="contact-input input-details content-details-labels">
+                            <label class="details-labels" id="phone-no-label">Phone no : </label>
+                            <input id="phone_no" type="number" placeholder="Phone no">
+                        </div>
+                        <div class="contact-input input-details">
+                            <label class="details-labels content-details-labels" id="email-label">Email : </label>
+                            <input id="email" type="email" placeholder="example@gmail.com">
+                        </div>
+                        <div class="contact-input input-details">
+                            <label class="details-labels content-details-labels" id="express-delivery-label">Express Delivery </label>
+                            <input id="express-delivery" type="checkbox">
+                        </div>
+                    </form>
+                </div>
+                <div class="btn-outer">
+                    <div class="btn-shop-payment btn-clear" onclick="clearTheCart()">Clear your order</div>
+                    <div class="btn-shop-payment btn-place-order" onclick="checkout()">Checkout</div>
+                </div>
+            </div>
+<!-- Cart section ends and order chechout section begins -->            
+            <div id="order-checkout-section">
+                <div class="order-summary checkout-page-main-outers">
+                    <div class="title-and-language order-summary-details-outer">
+                        <div class="order-title checkout-page-main-titles title-language-common">Order summary</div>
+                        <div class="language title-language-common">
+                            Select language
+                            <select name="language">
+                                <option value="english">English</option>
+                                <option value="french">Français</option>
+                                <option value="spanish">española</option>
+                                <option value="spanish">中国人</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="order-summary-details">
+                        <div class="reference-label reference-common">Reference</div>
+                        <div class="reference-no reference-common">0011105954625879212</div>
+                        <div class="description-label description-common">Description</div>
+                        <div class="description-text description-common">Make payment</div>
+                        <div class="amount-label amount-common">Amount(USD)</div>
+                        <div class="amount amount-common">$0</div>
+                    </div>
+            
+                </div>
+                <form class="payment-details checkout-page-main-outers">
+                    <div class="payment-heading checkout-page-main-titles">Payment details</div>
+                    <div class="card-providers-logos ">
+                        <img src="shop/finance_logos.jpg" alt="finance_logos">
+                    </div>
+                    <div class="card-number payment-details-inputs-fields">
+                        <label for="card-number" style="color: white;"><b>Card Number</b></label><br>
+                        <input id="card-number" placeholder="XXXX-XXXX-XXXX-XXXX" type="number">
+                    </div>
+                    <div class="card-holders-name payment-details-inputs-fields">
+                        <label for="card-holder-name" style="color: white;"><b>Card Holders Name</b></label><br>
+                        <input id="card-holder-name" class="card-holders-name-input" placeholder="Card Holders Name" required type="text">
+                    </div>
+                    <div class="expiry-date payment-details-inputs-fields">
+                        <label for="expiry-date" style="color: white;"><b>Expiry Date</b></label><br>
+                        <input id="expiry-date" type="month">
+                    </div>
+                    <div class="security-code payment-details-inputs-fields">
+                        <label for="security-code" style="color: white;"><b>Security code</b></label><br>
+                        <input id="security-code" type="number" placeholder="XXX"><br>
+                        <div style="color: white;"><b>Last three digits on the back of the card</b></div>
+                    </div>
+                </form>
+                <div class="billing-address checkout-page-main-outers">
+                    <div class="billing-address-heading checkout-page-main-titles">Billing address</div>
+                    <button onclick="showBillingAddressToEdit(this)" class="btn-billing-address-edit btn-edit">edit
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 7 4 4 4-4m-8 6 4 4 4-4"/>
+                        </svg>                          
+                    </button>
+                    <form id="billing-form" class="billing-details-input-fields billing-contact-input-fields">
+                        <label class="address-1-label billing-details-input-label">Address 1</label>
+                        <div class="billing-details-input"><input required class="address-1-input billing-input-field" placeholder="Address Line 1" type="text"></div>
+                        <label class="address-2-label billing-details-input-label">Address 2</label>
+                        <div class="billing-details-input"><input required class="billing-input-field" placeholder="Address Line 2" type="text"></div>
+                        <label class="address-3-label billing-details-input-label ">Address 3</label>
+                        <div class="billing-details-input"><input class="billing-input-field" placeholder="Address Line 3" type="text"></div>
+                        <label class="town-label billing-details-input-label">Town/City</label>
+                        <div class="billing-details-input"><input class="town-input billing-input-field" placeholder="Town/City" type="text"></div>
+                        <label class="state-label billing-details-input-label">State/Region</label>
+                        <div class="billing-details-input"><input class="state-input billing-input-field" placeholder="State/Region" type="text"></div>
+                        <label class="postal-code-label billing-details-input-label">Postal code/ Zip code</label>
+                        <div class="billing-details-input"><input class="postal-code-input billing-input-field" placeholder="Postal code/ Zip code" type="text"></div>
+                        <label class="country-label billing-details-input-label">Country</label>
+                        <div class="billing-details-input">
+                            <select style="outline: none; border: none" class="country-input billing-input-field" name="countries">
+                                <option selected value>Select Your Country</option>
+                                <option>Australia</option>
+                                <option>Bangladesh</option>
+                                <option>Bhutan</option>
+                                <option>Brazil</option>
+                                <option>Brunei</option>
+                                <option>Cambodia</option>
+                                <option>Canada</option>
+                                <option>China</option>
+                                <option>Colombia</option>
+                                <option>Croatia</option>
+                                <option>Cuba</option>
+                                <option>Cyprus</option>
+                                <option>Czech Republic</option>
+                                <option>Denmark</option>
+                                <option>Egypt</option>
+                                <option>Ethiopia</option>
+                                <option>Fiji</option>
+                                <option>Finland</option>
+                                <option>France</option>
+                                <option>Germany</option>
+                                <option>Greece</option>
+                                <option>Hungary</option>
+                                <option>Iceland</option>
+                                <option>India</option>
+                                <option>Indonesia</option>
+                                <option>Ireland</option>
+                                <option>Israel</option>
+                                <option>Italy</option>
+                                <option>Japan</option>
+                                <option>Sri Lanka</option>
+                                <option>UK</option>
+                                <option>USA</option>
+                                <option>Zimbabwe</option>
+                            </select>
+                        </div>
+                    </form>
+                    <div class="billing-contact-summery billing-address-summary"></div>
+                    <div class="billing-address-buttons checkout-page-buttons">
+                        <button id="cancelButton" class="btn-billing-address-cancel billing-contact-cancel-btn btn">Cancel</button>
+                        <button onclick="saveBillingAddress()" class="btn-billing-address-save billing-contact-save-btn btn">
+                            Save
+                        </button>
+                    </div>
+                </div>
+                <div class="contact-details checkout-page-main-outers">
+                    <div class="contact-details-heading checkout-page-main-titles">Contact details</div>
+                    <button onclick="showContactDetailsToEdit()" class="btn-contact-details-edit btn-edit">edit
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 7 4 4 4-4m-8 6 4 4 4-4"/>
+                        </svg>                          
+                    </button>
+                    <div id="form-div" class="contact-details-input-fields">
+                        <label class="phone-number contact-details-input-label">Phone number</label>
+                        <div class="contact-details-input"><input placeholder="Phone no" class="phone-no-input" type="number"></div>
+                        <label class="email-address contact-details-input-label">Email address</label>
+                        <div class="contact-details-input"><input placeholder="example@gmail.com" class="email-input" type="text"></div>
+                    </div>
+                    <div class="billing-contact-summery contact-details-summery">
+                    </div>
+                    <div class="contact-details-buttons checkout-page-buttons">
+                        <button onclick="resetFormValues()" class="btn-contact-details-cancel billing-contact-cancel-btn  btn">Cancel</button>
+                        <button onclick="saveContactDetails()" class="btn-contact-details-save billing-contact-save-btn btn">
+                            Save
+                        </button>
+                    </div>
+                </div>
+                <div class="btn-outer">
+                    <div class="btn-shop-payment btn-place-order" onclick="Make_Payment()">Make Payment</div> 
+                    <div class="btn-shop-payment btn-cancel-payment" onclick="Cancel_Payment()">Cancel</div>
+                </div>
+            </div>
+        </main>
+ <!-- order checkout section ends and footer begins -->       
+        <!-- footer -->
+        <footer class="wave-footer">
+            <div class="footer-container">
+        
+                <div class="footer-data">
+                    <div class="footer-about-me">
+                        <a href="page_editor1.html" target="_blank"><h3>Nadini Atugoda</h3></a>
+                        <p>Page edited and designed by Nadini Atugoda, a university undergrad and web designer. 
+                            Dedicated to delivering captivating and innovative digital experiences.
+                        </p>
+                    </div>
+        
+                    <span class="footer-pages">
+                        <a href="splash.html" target="_blank">splash</a>
+                        <a href="content_student1.html" target="_self">content</a>
+                        <a href="page_editor1.html" target="_blank">page_editor</a>
+                    </span>
+                    
+                    <span class="footer-brands">
+                        <a href="https://www.linkedin.com/in/nadini-atugoda-5a06542b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://x.com/salisha40534982?s=21"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/nadini_salisha?igsh=MTI4MzMxcXh3cGZqdw%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                    </span>
+                </div>
+        
+                <div class="copyright">
+                    <h4>© Copyrights Nadini. All Rights Reserved.</h4>
+                </div>
+                
+            </div>
+        
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
+            <div class="wave wave4"></div>
+        
+        </footer>
+        <!-- javascript file -->
+        <script src="shop.js"></script>
+    </body>
+</html>

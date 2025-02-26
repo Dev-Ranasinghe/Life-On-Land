@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life On Land</title>
+    <link rel="icon" href="images/logo.png" type="image/icon">
+
+    <!-- logo link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- css file link -->
+    <link rel="stylesheet" href="home.css">
+
+    <!-- main css file link -->
+    <link rel="stylesheet" href="main.css">
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+<body>
+    
+    <!-- header section -->
+    <header>
+
+        <!-- website logo -->
+        <img src="images/logo.png" class="logo" alt="logo">
+
+        <!-- header title -->
+        <span class="title">
+            <span class="title-life">Life</span>
+            <span class="title-on">On</span>
+            <span class="title-land">Land</span>
+        </span>
+
+        <!-- navigation menu -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="home.html" class="active">home</a></li>
+                <li class="content-nav"><a href="#">content</a>
+                    <ul class="dropdown">
+                        <li><a href="content_student1.html">Bio Diversity</a></li>
+                        <li><a href="sasmithContent.html">Forests</a></li>
+                        <li><a href="content_st3.html">Mountains</a></li>
+                        <li><a href="content4.html">National Strategies</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">gallery</a></li>
+                <li><a href="shop.html">shop</a></li>
+                <li><a href="feedback.html">feedback</a></li>
+                <li><a href="sitemap.html">site map</a></li>
+                <li><a href="aboutus.html">about us</a></li>
+            </ul>
+        </nav>
+
+        <!-- search bar trigger -->
+        <div class="icons">
+            <a href="profile.html"><i class="fa-regular fa-user" id="user-btn"></i></a>
+        </div>
+
+    </header>
+
+    <!-- home section -->
+    <section class="home" id="home">
+
+        <!-- thumbnail data -->
+        <div class="home-description">
+
+            <h3 class="home-title">Life On Land</h3>
+            <a href="#explore-anchor" class="explore-btn">Explore</a>
+            <p class="home-data">Goal: SDG 15 aims to protect, restore, and promote the sustainable use of terrestrial ecosystems. This includes managing forests sustainably, combating desertification, halting and reversing land degradation, and stopping biodiversity loss.</p>
+
+        </div>
+
+        <!-- background video -->
+        <div class="video-container">
+            <video src="videos/owl.mp4" id="vid-slider" loop autoplay muted></video>
+        </div>
+
+        <!-- video slider -->
+        <ul class="video-slider">
+            <li onclick="videoUrl('videos/owl.mp4')"><img src="images/owlImg.PNG" alt="" class="video-slider-image"></li>
+            <li onclick="videoUrl('videos/sakura.mp4')"><img src="images/sunsetImg.PNG" alt="" class="video-slider-image"></li>
+            <li onclick="videoUrl('videos/ocean.mp4')"><img src="images/ocean_img.PNG" alt="" class="video-slider-image"></li>
+            <li onclick="videoUrl('videos/parrot.mp4')"><img src="images/parrotImg.PNG" alt="" class="video-slider-image"></li>
+        </ul>
+
+        <!-- social media icons -->
+        <div class="home-social-icons">
+            <a href="https://www.facebook.com/sasmithdev?mibextid=LQQJ4d" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/dev__ranasinghe?igsh=MTUxYzAzM2o4d2h5dw%3D%3D&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/devranasinghe_?s=21&t=ot9w8Gu4vhvkqIEb_eOQBg" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+
+        <!-- team caption -->
+        <div class="home-team">
+            <a href="aboutus.html" class="home-team-link">
+                <i class="fa-solid fa-dragon"></i><p>Project by Team E2</p>
+            </a>
+        </div>
+
+    </section>
+
+    <!-- backward button -->
+    <button onclick="scrollToTop()" id="backward-button"><i class="fa-solid fa-backward"></i></button>
+
+    <!-- scroll to top -->
+    <button onclick="scrollToTop()" class="scroll-to-top"><i class="fa-solid fa-house scroll-icon"></i></button>
+
+    <!-- overview section -->
+    <section class="overview-container" id="explore-anchor">
+
+        <h2 class="overview-main-title">Overview</h2>
+
+        <div class="overview-data">
+            <h3 class="overview-title">Outline</h3>
+            <p class="overview-description">Here, you will find comprehensive information on the importance of 
+                preserving our planet's land resources. We explore the critical role forests, wetlands, and other 
+                ecosystems play in maintaining biodiversity and supporting human life. Learn about the challenges 
+                these ecosystems face, from deforestation and pollution to climate change and unsustainable 
+                agricultural practices. Join us in our mission to ensure a sustainable future for all life on 
+                land. Explore, learn, and take action today!</p>
+        </div>
+        <div class="overview-img-box"><img src="images/overview.jpg" alt="overview image" class="overview-img"></div>
+    </section>
+
+    <!-- target section -->
+    <section class="targets"> 
+
+        <h2 class="target-title">Targets</h2>
+        <button class="pre-btn"><i class="fa-solid fa-arrow-right"></i></button>
+        <button class="nxt-btn"><i class="fa-solid fa-arrow-right"></i></button>
+        
+        <div class="target-container">
+            
+            <div class="target-card">
+                
+                <div class="target-image">
+                    <img src="images/target_15.1.png" class="product-thumb" alt="">
+                </div>
+                
+                <div class="target-info">
+                    <h2 class="target-name">Target 15.1</h2>
+                    <p class="target-description">By 2020, ensure the conservation, restoration and sustainable use of terrestrial and inland freshwater ecosystems and their services, in particular forests, wetlands, mountains and drylands, in line with obligations under international agreements</p>
+                </div>
+            
+            </div>
+            
+            <div class="target-card">
+                
+                <div class="target-image">
+                    <img src="images/target_15.2.png" class="product-thumb" alt="">
+                </div>
+                
+                <div class="target-info">
+                    <h2 class="target-name">Target 15.2</h2>
+                    <p class="target-description">By 2020, promote implementation of sustainable management of all types of forests, halt deforestation, restore degraded forests and substantially increase afforestation and reforestation globally</p>
+                </div>
+            
+            </div>
+            
+            <div class="target-card">
+                
+                <div class="target-image">
+                    <img src="images/target_15.3.png" class="product-thumb" alt="">
+                </div>
+                <div class="target-info">
+                    <h2 class="target-name">Target 15.3</h2>
+                    <p class="target-description">By 2030, combat desertification, restore degraded land and soil, including land affected by desertification, drought and floods, and strive to achieve a land degradation-neutral world</p>
+                </div>
+            
+            </div>
+            
+            <div class="target-card">
+                
+                <div class="target-image">
+                    <img src="images/target_15.4.png" class="product-thumb" alt="">
+                </div>
+                <div class="target-info">
+                    <h2 class="target-name">Target 15.4</h2>
+                    <p class="target-description">By 2030, ensure the conservation of mountain ecosystems, including their biodiversity, in order to enhance their capacity to provide benefits that are essential for sustainable development</p>
+                </div>
+            
+            </div>
+            
+            <div class="target-card">
+                
+                <div class="target-image">
+                    <img src="images/target_15.5.png" class="product-thumb" alt="">
+                </div>
+                
+                <div class="target-info">
+                    <h2 class="target-name">Target 15.5</h2>
+                    <p class="target-description">Take urgent and significant action to reduce the degradation of natural habitats, halt the loss of biodiversity and, by 2020, protect and prevent the extinction of threatened species</p>
+                </div>
+            
+            </div>
+            
+            <div class="target-card">
+                
+                <div class="target-image">
+                    <img src="images/target_15.6.png" class="product-thumb" alt="">
+                </div>
+                
+                <div class="target-info">
+                    <h2 class="target-name">Target 15.6</h2>
+                    <p class="target-description">Promote fair and equitable sharing of the benefits arising from the utilization of genetic resources and promote appropriate access to such resources, as internationally agreed</p>
+                </div>
+            
+            </div>
+            
+            <div class="target-card">
+                
+                <div class="target-image">
+                    <img src="images/target_15.7.png" class="product-thumb" alt="">
+                </div>
+                
+                <div class="target-info">
+                    <h2 class="target-name">Target 15.7</h2>
+                    <p class="target-description">Take urgent action to end poaching and trafficking of protected species of flora and fauna and address both demand and supply of illegal wildlife products</p>
+                </div>
+            
+            </div>
+            
+            <div class="target-card">
+                
+                <div class="target-image">
+                    <img src="images/target_15.8.png" class="product-thumb" alt="">
+                </div>
+                
+                <div class="target-info">
+                    <h2 class="target-name">Target 15.8</h2>
+                    <p class="target-description">By 2020, introduce measures to prevent the introduction and significantly reduce the impact of invasive alien species on land and water ecosystems and control or eradicate the priority species</p>
+                </div>
+            
+            </div>
+            
+            <div class="target-card">
+                
+                <div class="target-image">
+                    <img src="images/target_15.9.png" class="product-thumb" alt="">
+                </div>
+                
+                <div class="target-info">
+                    <h2 class="target-name">Target 15.9</h2>
+                    <p class="target-description">By 2020, integrate ecosystem and biodiversity values into national and local planning, development processes, poverty reduction strategies and accounts</p>
+                </div>
+            
+            </div>
+            
+            <div class="target-card">
+                
+                <div class="target-image">
+                    <img src="images/target_15.a.png" class="product-thumb" alt="">
+               </div>
+                
+                <div class="target-info">
+                    <h2 class="target-name">Target 15.a</h2>
+                    <p class="target-description">Mobilize and significantly increase financial resources from all sources to conserve and sustainably use biodiversity and ecosystems</p>
+                </div>
+            
+            </div>
+
+            <div class="target-card">
+                
+                <div class="target-image">
+                    <img src="images/target_15.b.png" class="product-thumb" alt="">
+                </div>
+                
+                <div class="target-info">
+                    <h2 class="target-name">Target 15.b</h2>
+                    <p class="target-description">Mobilize significant resources from all sources and at all levels to finance sustainable forest management and provide adequate incentives to developing countries to advance such management, including for conservation and reforestation</p>
+                </div>
+            
+            </div>
+
+            <div class="target-card">
+                
+                <div class="target-image">
+                    <img src="images/target_15.c.png" class="product-thumb" alt="">
+                </div>
+                
+                <div class="target-info">
+                    <h2 class="target-name">Target 15.c</h2>
+                    <p class="target-description">Enhance global support for efforts to combat poaching and trafficking of protected species, including by increasing the capacity of local communities to pursue sustainable livelihood opportunities</p>
+                </div>
+            
+            </div>
+        
+        </div>
+
+    </section>    
+
+    <!-- realted topics -->
+    <section class="related-topics">
+
+        <h2 class="related-title">Related Content</h2>
+
+        <div class="related-topics-container">
+            
+            <input class="related-topics-input" type="radio" name="slide" id="c1">
+            <label for="c1" class="related-topics-card">
+                <span class="row">
+                    <span class="icon">1</span>
+                    <span class="description">
+                        <a href="content_student1.html">Biodiversity</a>
+                    </span>
+                </span>
+            </label>
+
+            <input class="related-topics-input" type="radio" name="slide" id="c2">
+            <label for="c2" class="related-topics-card">
+                <span class="row">
+                    <span class="icon">2</span>
+                    <span class="description">
+                        <a href="sasmithContent.html">Forest</a>
+                    </span>
+                </span>
+            </label>
+
+            <input class="related-topics-input" type="radio" name="slide" id="c3">
+            <label for="c3" class="related-topics-card">
+                <span class="row">
+                    <span class="icon">3</span>
+                    <span class="description">
+                        <a href="content_st3.html">Mountains</a>
+                    </span>
+                </span>
+            </label>
+
+            <input class="related-topics-input" type="radio" name="slide" id="c4">
+            <label for="c4" class="related-topics-card">
+                <span class="row">
+                    <span class="icon">4</span>
+                    <span class="description">
+                        <a href="content4.html">National Strategies</a>
+                    </span>
+                </span>
+            </label>
+        </div>
+        
+    </section>
+
+    <!-- publications -->
+     <section class="publications">
+
+        <h2 class="publications-title">Publications</h2>
+
+        <div class="row"> 
+
+            <div class="image">
+                <img src="images/publication1.PNG" alt="publication 1">
+                <div class="details">
+                    <div class="more">
+                        <a href="https://sdgs.un.org/synergy-solutions-world-crisis-tackling-climate-and-sdg-action-together"  
+                        target="_blank" class="read-more">Read <span>more</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image">
+                <img src="images/publication2.PNG" alt="publication 2">
+                <div class="details">
+                    <div class="more">
+                        <a href="https://sdgs.un.org/publications/third-global-conference-strengthening-synergies-between-paris-agreement-and-2030" 
+                        target="_blank" class="read-more">Read <span>more</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image">
+                <img src="images/publication3.PNG" alt="publication 3">
+                <div class="details">
+                    <div class="more">
+                        <a href="https://sdgs.un.org/publications/raising-ambition-era-paris5-and-pandemic-recovery-33971" 
+                        target="_blank" class="read-more">Read <span>more</span></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+     </section>
+
+    <!-- news -->
+    <div class="news">
+
+    <h2 class="news-title">News Articles</h2>
+
+        <div class="news-container">
+
+            <div class="news-box">
+                
+                <div class="news-img">
+                    <img src="images/homeNews1.jpg" alt="news article">
+                </div>
+
+                <div class="news-text">
+                    <a href="https://sdgs.un.org/blog/expert-group-prepare-report-analysing-climate-and-sdg-synergies-aiming-maximize-action-impact" target="_blank" class="news-description">Expert Group to Prepare Report Analysing Climate and SDG Synergies, Aiming to Maximize Action Impact</a>
+                    <p>An international group of fourteen experts from diverse backgrounds has been co-convened by UN DESA and UNFCCC secretariat in May 2023 to prepare a report building the evidence base for how action tackling...</p>
+                    <a href="https://sdgs.un.org/blog/expert-group-prepare-report-analysing-climate-and-sdg-synergies-aiming-maximize-action-impact" target="_blank">Read More</a>
+                </div>
+
+            </div>
+
+            <div class="news-box">
+                
+                <div class="news-img">
+                    <img src="images/homeNews2.jpg" alt="news article">
+                </div>
+
+                <div class="news-text">
+                    <a href="https://www.rainforestcoalition.org/country-news/eswatini-submits-first-deforestation-emissions-targets-to-the-un/" target="_blank" class="news-description">Eswatini submits first Deforestation & Emissions Targets to the UN</a>
+                    <p>The REDD+ submission follows a year of data gathering by Eswatini climate and forestry teams who collected land use data for the whole country for the years 2000-2022. The CfRN (Coalition for Rainforest Nations) team has been actively supporting since 2023...</p>
+                    <a href="https://www.rainforestcoalition.org/country-news/eswatini-submits-first-deforestation-emissions-targets-to-the-un/" target="_blank">Read More</a>
+                </div>
+
+            </div>
+
+            <div class="news-box">
+                
+                <div class="news-img">
+                    <img src="images/homeNews3.jpg" alt="news article">
+                </div>
+
+                <div class="news-text">
+                    <a href="https://www.rainforestcoalition.org/news/new-guidelines-report-on-unfccc-redd-and-article-6-carbon-credits-published/" target="_blank" class="news-description">New Guidelines Report on UNFCCC REDD+ and Article 6 Carbon Credits published.</a>
+                    <p>“The REDD+ framework evolved over two decades of UNFCCC decisions – and for this reason it’s not easily understood. The new primer report is perfect for governments, corporations, analysts, academics...</p>
+                    <a href="https://www.rainforestcoalition.org/news/new-guidelines-report-on-unfccc-redd-and-article-6-carbon-credits-published/" target="_blank">Read More</a>
+                </div>
+
+            </div>
+
+            <div class="news-box">
+                
+                <div class="news-img">
+                    <img src="images/homeNews4.jpg" alt="news article">
+                </div>
+
+                <div class="news-text">
+                    <a href="https://www.rainforestcoalition.org/country-news/a-decade-of-redd-notable-achievements-by-forest-nations/" target="_blank" class="news-description">A Decade of REDD+: Notable Achievements by Forest Nations</a>
+                    <p>This year marks the 10th anniversary of REDD+ implementation. Since the Warsaw Framework for REDD+ was adopted in 2013, 60 developing countries have reported activities to reduce deforestation and forest degradation to the UN Climate...</p>
+                    <a href="https://www.rainforestcoalition.org/country-news/a-decade-of-redd-notable-achievements-by-forest-nations/" target="_blank">Read More</a>
+                </div>
+
+            </div>
+
+            <div class="news-box">
+                
+                <div class="news-img">
+                    <img src="images/homeNews5.jpg" alt="news article">
+                </div>
+
+                <div class="news-text">
+                    <a href="https://www.rainforestcoalition.org/country-news/cop28-a-victory-for-the-coalition-for-rainforest-nations-and-the-paris-agreement/" target="_blank" class="news-description">COP28: A Victory for the Coalition for Rainforest Nations and the Paris Agreement</a>
+                    <p>While the final agreement did not go as far as many had wished in terms of phasing out fossil fuels, it was nonetheless historic. The final text, for first time, included the need for all countries to transition away from fossil fuels...</p>
+                    <a href="https://www.rainforestcoalition.org/country-news/cop28-a-victory-for-the-coalition-for-rainforest-nations-and-the-paris-agreement/" target="_blank">Read More</a>
+                </div>
+
+            </div>
+
+            <div class="news-box">
+                
+                <div class="news-img">
+                    <img src="images/homeNews6.jpg" alt="news article">
+                </div>
+
+                <div class="news-text">
+                    <a href="https://www.rainforestcoalition.org/country-news/cfrn-mission-to-gabon-marks-launch-of-new-report-on-its-climate-pledge/" target="_blank" class="news-description">CfRN Mission to Gabon Marks Launch of New Report on Climate Pledge</a>
+                    <p>In June, the CfRN technical team conducted a mission to Gabon to mark the national launch of a new report, called the Biennial Transparency Report (BTR), to show Gabon’s fulfillment of its obligations under the United Nations Framework Convention on Climate Change...</p>
+                    <a href="https://www.rainforestcoalition.org/country-news/cfrn-mission-to-gabon-marks-launch-of-new-report-on-its-climate-pledge/" target="_blank">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="wave-footer">
+
+        <div class="footer-container">
+            
+            <div class="footer-data">
+                <div class="footer-about-me">
+                    <a href="sasmithPageEditor.html" target="_blank"><h3>SASMITH DEVMINA</h3></a>
+                    <p>Page edited and designed by Sasmith Devmina, a university undergrad and web designer. 
+                        Dedicated to delivering captivating and innovative digital experiences.
+                    </p>
+                </div>
+
+                <span class="footer-pages">
+                    <a href="sasmithPageEditor.html" target="_blank">Page Editor</a>
+                    <a href="sasmithContent.html" target="_self">Content Page</a>
+                    <a href="feedback.html" target="_self">Feedback Page</a>
+                </span>
+                
+                <span class="footer-brands">
+                    <a href="https://www.facebook.com/sasmithdev?mibextid=LQQJ4d" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/devranasinghe_?s=21&t=ot9w8Gu4vhvkqIEb_eOQBg" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/dev__ranasinghe?igsh=MTUxYzAzM2o4d2h5dw%3D%3D&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </span>
+            </div>
+
+            <div class="copyright">
+                <h4>© Copyrights Sasmith Devmina. All Rights Reserved.</h4>
+            </div>
+            
+        </div>
+
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+        <div class="wave wave4"></div>
+
+
+    </footer>
+
+    <!-- js file link -->
+    <script src="home.js"></script>
+
+</body>
+</html>

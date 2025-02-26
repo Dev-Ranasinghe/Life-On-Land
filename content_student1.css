@@ -1,0 +1,83 @@
+/* scroll to top */
+.scroll-to-top{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color: rgb(138, 255, 5);
+    z-index: 1999;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+  }
+  
+  .scroll-to-top i{
+    font-size: 20px;
+  }
+  
+  .scroll-to-top:hover{
+    background-color: #25b808;
+    box-shadow: 0 0 40px rgb(155, 252, 0);
+    color: #ffffff;
+  }
+  
+  /* backward button */
+  #backward-button{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    position: fixed;
+    right: 10px;
+    bottom: 60px;
+    background-color: rgb(138, 255, 5);
+    z-index: 1999;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+  }
+  
+  #backward-button i{
+    font-size: 20px;
+  }
+  
+  #backward-button:hover{
+    background-color: #25b808;
+    box-shadow: 0 0 40px rgb(155, 252, 0);
+    color: #ffffff;
+  }
+
+main {
+    padding: 1rem;
+}
+
+section {
+    margin: 2rem 0;
+    background:beige;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 0.5rem;
+}
+.content {
+    display: flex;
+    align-items: center;
+}
+
+.content img {
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 1rem;
+}
+.content div {
+    flex: 1;
+}
+
+ul {
+    margin: 0;
+    padding-left: 1.5rem;
+}

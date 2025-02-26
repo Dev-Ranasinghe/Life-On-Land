@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life On Land</title>
+    <link rel="icon" href="images/logo.png" type="image/icon">
+
+    <!-- styling sheet -->
+    <link rel="stylesheet" href="feedback.css">
+
+    <!-- main styling -->
+    <link rel="stylesheet" href="main.css">
+
+    <!-- logo link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+</head>
+
+<body>
+
+<!-- header section -->
+<header>
+
+    <!-- website logo -->
+    <img src="images/logo.png" class="logo" alt="logo">
+
+    <!-- header title -->
+    <span class="title">
+        <span class="title-life">Life</span>
+        <span class="title-on">On</span>
+        <span class="title-land">Land</span>
+    </span>
+
+    <!-- navigation menu -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html">home</a></li>
+            <li class="content-nav"><a href="#">content</a>
+                <ul class="dropdown">
+                    <li><a href="content_student1.html">Bio Diversity</a></li>
+                    <li><a href="sasmithContent.html">Forests</a></li>
+                    <li><a href="content_st3.html">Mountains</a></li>
+                    <li><a href="content4.html">National Strategies</a></li>
+                </ul>
+            </li>
+            <li><a href="gallery.html">gallery</a></li>
+            <li><a href="shop.html">shop</a></li>
+            <li><a href="feedback.html" class="active">feedback</a></li>
+            <li><a href="sitemap.html">site map</a></li>
+            <li><a href="aboutus.html">about us</a></li>
+        </ul>
+    </nav>
+
+    <!-- search bar trigger -->
+    <div class="icons">
+        <a href="profile.html"><i class="fa-regular fa-user" id="user-btn"></i></a>
+    </div>
+
+</header>
+
+<section class="feedback-container">
+
+    <!-- backward button -->
+    <button onclick="scrollToTop()" id="backward-button"><i class="fa-solid fa-backward"></i></button>
+
+    <!-- feedback container -->
+    <img src="images/feedbackBg.jpg" alt="feedback background" class="feedback-img">
+    <div class="container">
+        <h1>Feedback Form</h1>
+        <form id="feedbackForm">
+            <div class="form-group">
+                <label for="name">Name (required)</label>
+                <input type="text" id="name" name="name" required>
+                <span class="error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email (required)</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+                <label for="rating">Rating (required)</label>
+                <input type="number" id="rating" name="rating" min="1" max="5" required>
+                <span class="error" id="ratingError"></span>
+            </div>
+            <div class="form-group">
+                <label for="comment">Comment (required)</label>
+                <textarea id="comment" name="comment" required></textarea>
+                <span class="error" id="commentError"></span>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject (optional)</label>
+                <input type="text" id="subject" name="subject">
+            </div>
+            <div class="form-group">
+                <label for="category">Category (optional)</label>
+                <select id="category" name="category">
+                    <option value="">Select a category</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="bug">Bug Report</option>
+                    <option value="suggestion">Suggestion</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="firstTime">Was this your first time visiting? (required)</label>
+                <select id="firstTime" name="firstTime" required>
+                    <option value="">Select an option</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                <span class="error" id="firstTimeError"></span>
+            </div>
+            <div class="form-group">
+                <label for="informative">Was this website informative and easy to navigate? (required)</label>
+                <select id="informative" name="informative" required>
+                    <option value="">Select an option</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                <span class="error" id="informativeError"></span>
+            </div>
+            <div class="form-group">
+                <label for="recommend">Would you recommend our services? (required)</label>
+                <select id="recommend" name="recommend" required>
+                    <option value="">Select an option</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                <span class="error" id="recommendError"></span>
+            </div>
+            <div class="form-group">
+                <button type="button" onclick="previewFeedback()">Preview</button>
+            </div>
+        </form>
+        <div id="previewContainer" class="hidden">
+            <h2>Preview</h2>
+            <div id="previewContent"></div>
+            <button type="button" onclick="editFeedback()">Edit</button>
+            <button type="button" onclick="emailSend()">Submit</button>
+        </div>
+        <div id="confirmationMessage" class="hidden">
+            <h2>Thank you for your feedback!</h2>
+            <div id="summaryContent"></div>
+        </div>
+    </div>
+
+</section>
+
+<!-- footer -->
+<footer class="wave-footer">
+
+    <div class="footer-container">
+        
+        <div class="footer-data">
+            <div class="footer-about-me">
+                <a href="sasmithPageEditor.html" target="_blank"><h3>SASMITH DEVMINA</h3></a>
+                <p>Page edited and designed by Sasmith Devmina, a university undergrad and web designer. 
+                    Dedicated to delivering captivating and innovative digital experiences.
+                </p>
+            </div>
+
+            <span class="footer-pages">
+                <a href="sasmithPageEditor.html" target="_blank">Page Editor</a>
+                <a href="home.html" target="_self">Home Page</a>
+                <a href="sasmithContent.html" target="_self">Content Page</a>
+            </span>
+            
+            <span class="footer-brands">
+                <a href="https://www.facebook.com/sasmithdev?mibextid=LQQJ4d" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com/devranasinghe_?s=21&t=ot9w8Gu4vhvkqIEb_eOQBg" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/dev__ranasinghe?igsh=MTUxYzAzM2o4d2h5dw%3D%3D&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </span>
+        </div>
+
+        <div class="copyright">
+            <h4>© Copyrights Sasmith Devmina. All Rights Reserved.</h4>
+        </div>
+        
+    </div>
+
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+    <div class="wave wave4"></div>
+
+
+</footer>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="feedback.js"></script>
+
+</body>
+</html>

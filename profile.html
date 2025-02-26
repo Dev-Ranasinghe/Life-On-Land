@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life On Land</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="icon" href="images/logo.png" type="image/icon">
+
+    <!-- logo link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+   
+</head>  
+<body>
+        <!-- header section -->
+        <header>
+
+            <!-- website logo -->
+            <img src="chavi_images/logo11.jpg" class="logo" alt="logo">
+    
+            <!-- header title -->
+            <span class="title">
+                <span class="title-life">Life</span>
+                <span class="title-on">On</span>
+                <span class="title-land">Land</span>
+            </span>
+    
+            <!-- navigation menu -->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="home.html">home</a></li>
+                    <li class="content-nav"><a href="#">content</a>
+                        <ul class="dropdown">
+                            <li><a href="content_student1.html">Bio Diversity</a></li>
+                            <li><a href="sasmithContent.html">Forests</a></li>
+                            <li><a href="content_st3.html">Mountains</a></li>
+                            <li><a href="content4.html">National Strategies</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gallery.html">gallery</a></li>
+                    <li><a href="shop.html">shop</a></li>
+                    <li><a href="feedback.html">feedback</a></li>
+                    <li><a href="sitemap.html">site map</a></li>
+                    <li><a href="aboutus.html">about us</a></li>
+                </ul>
+            </nav>
+    
+            <!-- user icon -->
+            <div class="icons">
+                <a href="profile.html"><i class="fa-regular fa-user active" id="user-btn"></i></a>
+            </div>
+    
+        </header>
+
+    <h3>USER PROFILE FORM</h3>
+    <div id="progress-bar">
+        <div id="progress"></div>
+        <span id="progress-text">0%</span> <!-- Moved the progress text inside the progress bar -->
+    </div>
+    
+    <button id="start-btn" class="start-button" onclick="startProgress()">Start</button>
+    <div class="container" id="profile-container">
+        <h1>STEP 1 Personal details | Question <span id="question-number">1</span>/5</h1>
+        <div id="profile-output">
+            <!-- Profile information are displayed here -->
+        </div>
+        <div id="prompt-area">
+            <!-- Prompts are dynamically generated here -->
+            Enter your name: <input type='text' id='name-input'><br>
+        </div>
+        <button id="skip-btn" onclick="skipPrompt()">Skip</button>
+        <button id="next-btn" onclick="nextPrompt()">Next</button>
+    </div>
+    <button id="step2-btn" class="step2-button" onclick="goToStep2()" style="display:none;">Step 2</button>
+    <div class="container" id="volunteering-container">
+        <h1>STEP 2 Volunteer Experience | Question <span id="volunteer-question-number">1</span>/6</h1>
+        <div id="volunteer-output">
+            <!-- Volunteer information are displayed here -->
+        </div>
+        <div id="volunteer-prompt-area">
+            <!-- Volunteer prompts are dynamically generated here -->
+            Rational: <input type='text' id='volunteer-input'><br>
+        </div>
+        <button id="volunteer-skip-btn" onclick="skipVolunteerPrompt()">Skip</button>
+        <button id="volunteer-next-btn" onclick="nextVolunteerPrompt()">Next</button>
+    </div>
+    <button id="step3-btn" class="step3-button" onclick="goToStep3()" style="display:none;">Step 3</button>
+    <div class="container" id="step3-container">
+        <h1>STEP 3 Qualifications | Question <span id="step3-question-number">1</span>/6</h1>
+        <div id="step3-output">
+            <!-- Additional information are displayed here -->
+        </div>
+        <div id="step3-prompt-area">
+            <!-- Prompts for Step 3 are dynamically generated here -->
+            Area of study:  <input type='text' id='area-input'><br>
+        </div>
+        <button id="step3-skip-btn" onclick="skipStep3Prompt()">Skip</button>
+        <button id="step3-next-btn" onclick="nextStep3Prompt()">Next</button>
+    </div>
+    <button id="step4-btn" class="step4-button" onclick="goToStep4()" style="display:none;">Step 4</button>
+    <div class="container" id="step4-container">
+        <h1>STEP 4 Availability and contact | Question <span id="step4-question-number">1</span>/5</h1>
+        <div id="step4-output">
+            <!-- Additional information for Step 4 are displayed here -->
+        </div>
+        <div id="step4-prompt-area">
+            <!-- Prompts for Step 4 are dynamically generated here -->
+            Availability for volunteering (min-max):  <input type='text' id='step4-availability-input'><br>
+        </div>
+        <button id="step4-skip-btn" onclick="skipStep4Prompt()">Skip</button>
+        <button id="step4-next-btn" onclick="nextStep4Prompt()">Next</button>
+    </div>
+
+        <!-- footer -->
+        <footer class="wave-footer">
+
+            <div class="footer-container">
+                
+                <div class="footer-data">
+                    <div class="footer-about-me">
+                        <a href="pageeditor_st_3.html" target="_blank"><h3>Chavindu Mannakkara</h3></a>
+                        <p>Page edited and designed by Chavindu Mannakkara, a university undergrad and web designer. 
+                            Dedicated to delivering captivating and innovative digital experiences.
+                        </p>
+                    </div>
+    
+                    <span class="footer-pages">
+                        <a href="pageeditor_st_3.html" target="_blank">Page Editor</a>
+                        <a href="content_st3.html">Content</a>
+                        <a href="aboutus.html">About Us</a>
+                    </span>
+                    
+                    <span class="footer-brands">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </span>
+                </div>
+    
+                <div class="copyright">
+                    <h4>© Copyrights Chavindu Mannakkara. All Rights Reserved.</h4>
+                </div>
+                
+            </div>
+    
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
+            <div class="wave wave4"></div>
+    
+    
+        </footer>
+    
+    <script src="profile.js">
+
+    </script>
+</body>
+</html>
